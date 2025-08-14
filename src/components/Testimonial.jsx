@@ -23,23 +23,35 @@ const Testimonial = () => {
         {testimonialsData.map((testimonial, index) => (
           <div
             key={index}
-            className="max-w-[300px] shadow-lg rounded px-8 py-12 text-center"
+            className="w-full sm:w-[45%] lg:w-[30%] bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-xl"
           >
             <img
-              className="w-20 h-20 rounded-full mx-auto mb-4"
+              className="w-24 h-24 rounded-full border-4 border-blue-500 mb-6 object-cover"
               src={testimonial.image}
               alt={testimonial.alt}
             />
-            <h2 className="text-xl text-gray-700 font-medium">
+            <h2 className="text-xl font-semibold text-gray-800 mb-1">
               {testimonial.name}
             </h2>
-            <p className="text-gray-500 mb-4 text-sm">{testimonial.title}</p>
-            <div className="flex justify-center gap-1 text-red-500 mb-4">
-              {Array.from({ length: testimonial.rating }, (item, index) => (
-                <img key={index} src={assets.star_icon} />
+            <p className="text-blue-600 font-medium mb-4 text-sm">
+              {testimonial.title}
+            </p>
+            <div className="flex justify-center gap-1 text-yellow-400 mb-6">
+              {Array.from({ length: testimonial.rating }, (_, i) => (
+                <svg
+                  key={i}
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 fill-current"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.37 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.37-2.448a1 1 0 00-1.176 0l-3.37 2.448c-.784.57-1.838-.197-1.54-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.063 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.957z" />
+                </svg>
               ))}
             </div>
-            <p className="text-gray-600">{testimonial.text}</p>
+            <p className="text-gray-700 italic">
+              &quot;{testimonial.text}&quot;
+            </p>
           </div>
         ))}
       </div>
