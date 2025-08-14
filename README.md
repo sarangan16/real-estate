@@ -1,12 +1,39 @@
-# React + Vite
+ GoldStack Construction
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, mobile-first construction web application built with **ReactJS**, **Tailwind CSS**, **Framer Motion**, and **Web3Forms**. GoldStack showcases professional projects, client testimonials, and a contact system — delivering a seamless experience across all devices.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ Features
 
-## Expanding the ESLint configuration
+- ✅ **Responsive Design** – Optimized for mobile, tablet, and desktop
+- 🧱 **Project Showcase** – List of completed and ongoing construction projects
+- 💬 **Client Testimonials** – Real stories from happy homeowners
+- ✉️ **Contact Form** – Integrated with Web3Forms for email submissions
+- 🎨 **Smooth Animations** – Built with Framer Motion for engaging UI
+- Live on Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Tech Stack
+
+| Technology     | Purpose                           |
+|----------------|------------------------------------|
+| React.js       | Core frontend framework            |
+| Tailwind CSS   | Utility-first CSS for styling      |
+| Framer Motion  | Animation and transitions          |
+| Web3Forms      | Serverless contact form handler    |
+| GitHub Pages / Vercel | Deployment options          |
+
+
+GoldStack is designed with a **mobile-first approach**, ensuring optimal layout and performance across all screen sizes:
+- Fluid grid system
+- Scalable typography
+- Touch-friendly interactions
+
+---
+
+## 📂 Pages / Sections
+
+- **Home** – Hero section with call-to-actions
+- **About** – Info about the GoldStack brand
+- **Projects** – List of completed and ongoing projects
+- **Testimonials** – Dynamic client feedback cards
+- **Contact** – Form to reach out (powered by Web3Forms)
