@@ -1,6 +1,6 @@
 import React from "react";
 import { toast } from "react-toastify";
-
+import { motion } from "framer-motion";
 const Contact = () => {
   const [result, setResult] = React.useState("");
 
@@ -31,18 +31,21 @@ const Contact = () => {
   };
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      transition={{ duration: 1.5 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
       className="text-center p-6 py-20 lg:px-32 overflow-hidden"
       id="Contact"
     >
-      <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-center">
-        Contact{" "}
-        <span className="underline underline-offset-4 decoration-1 under font-light">
-          With Us
-        </span>
+      <h1 className="text-3xl sm:text-5xl font-extrabold mb-6 text-center tracking-tight">
+        Kontaktieren Sie{" "}
+        <span className="text-gray-400 font-semibold decoration-2">uns</span>
       </h1>
       <p className="text-gray-500 max-w-80 text-center mb-8 mx-auto">
-        Crafting Spaces, Building Legacies-Explore Our Portfolio
+        Wir freuen uns darauf, von Ihnen zu hören! Ob Fragen, Beratung oder
+        Projektanfragen – unser Team ist jederzeit für Sie da.
       </p>
 
       <form
@@ -84,7 +87,7 @@ const Contact = () => {
           {result ? result : "Send Message"}
         </button>
       </form>
-    </div>
+    </motion.div>
   );
 };
 

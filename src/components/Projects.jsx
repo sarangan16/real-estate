@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { assets, projectsData } from "../assets/assets";
-
+import { motion } from "framer-motion";
 const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [cardsToShow, setCardsToShow] = useState(1);
@@ -28,18 +28,22 @@ const Projects = () => {
   };
 
   return (
-    <div
-      className="containecontainer mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32 w-full overflow-hidden"
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      transition={{ duration: 1.5 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      className="containecontainer mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32 w-full overflow-hidden mb-15"
       id="Projects"
     >
-      <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-center">
-        Projects{" "}
-        <span className="underline underline-offset-4 decoration-1 under font-light">
-          Completed
+      <h1 className="text-3xl sm:text-5xl font-extrabold mb-6 text-center tracking-tight">
+        Abgeschlossene{" "}
+        <span className="text-gray-400 font-semibold decoration-2">
+          Projekte
         </span>
       </h1>
       <p className="text-gray-500 max-w-80 text-center mb-8 mx-auto">
-        Crafting Spaces, Building Legacies-Explore Our Portfolio
+        Räume gestalten, Werte schaffen – entdecken Sie unser Portfolio
       </p>
       <div className="flex justify-end items-center mb-8">
         <button
@@ -94,7 +98,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
