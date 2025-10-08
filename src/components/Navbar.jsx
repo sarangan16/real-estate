@@ -24,19 +24,29 @@ const Navbar = () => {
             className="h-12 md:h-16 lg:h-20 w-auto"
           />
           <ul className="hidden md:flex gap-7 text-white">
-            <a href="#Header" className="cursor-pointer hover:text-gray-400">
+            <a
+              href="#Header"
+              className="cursor-pointer relative inline-block transition duration-300 hover:-translate-y-1 hover:text-gray-300"
+            >
               Startseite
             </a>
 
-            <a href="#About" className="cursor-pointer hover:text-gray-400">
+            <a
+              href="#About"
+              className="cursor-pointer relative inline-block transition duration-300 hover:-translate-y-1 hover:text-gray-300"
+            >
               Über uns
             </a>
-            <a href="#Projects" className="cursor-pointer hover:text-gray-400">
+
+            <a
+              href="#Projects"
+              className="cursor-pointer relative inline-block transition duration-300 hover:-translate-y-1 hover:text-gray-300"
+            >
               Projekte
             </a>
             <a
               href="#Testimonial"
-              className="cursor-pointer hover:text-gray-400"
+              className="cursor-pointer relative inline-block transition duration-300 hover:-translate-y-1 hover:text-gray-300"
             >
               Kundenmeinungen
             </a>

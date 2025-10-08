@@ -35,40 +35,40 @@ export const assets = {
 
 export const projectsData = [
   {
-    title: "Serenity Suites",
+    title: "Residenz Harmonie",
     price: "€1,050,000",
     location: "Bremen",
     image: project_img_6,
   },
 
   {
-    title: "Serenity Suites",
+    title: "Villa Sonnengarten",
     price: "€ 550,000",
     location: "Hamburg",
     image: project_img_3,
   },
   {
-    title: "Vista Verde",
+    title: "Vista Verde Residenz",
     price: "€ 950,000",
     location: "Düsseldorf",
     image: project_img_5,
   },
   {
-    title: "Central Square",
+    title: "Platz am Dom",
     price: "€ 650,000",
     location: "Köln",
     image: project_img_4,
   },
 
   {
-    title: "Vista Verde",
+    title: "Villa Elbblick",
     price: "€ 850,000",
     location: "Hamburg",
     image: project_img_2,
   },
 
   {
-    title: "Pentahouse",
+    title: "Penthaus Lindenhof",
     price: "€750,000",
     location: "Berlin",
     image: project_img_1,
