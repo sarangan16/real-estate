@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import AnimatedNumber from "../components/AnimatedNumber";
 const About = () => {
   return (
-    <div>
+    <div className="mt-10">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 1.5 }}
@@ -13,13 +13,13 @@ const About = () => {
         className="flex flex-col justify-center items-center container mx-auto p-14 md:px-20 lg:px-32 w-full overflow-hidden mb-10"
         id="About"
       >
-        <h1 className="text-3xl sm:text-5xl font-extrabold mb-6 text-center tracking-tight">
-          unsere{" "}
-          <span className="text-gray-400 font-semibold decoration-2">
-            {" "}
+        <h1 className="text-3xl sm:text-5xl mb-6 text-center tracking-tight">
+          <span className="text-gray-500 font-light">unsere</span>{" "}
+          <span className="bg-blue-100 px-2 py-1 rounded-md text-gray-800">
             Marke
           </span>
         </h1>
+
         <p className="text-gray-500 max-w-80 text-center mb-8">
           Goldstack Construction steht für Qualität, Zuverlässigkeit und moderne
           Architektur – seit über einem Jahrzehnt in attraktiven Lagen aktiv.
@@ -30,7 +30,7 @@ const About = () => {
             alt=""
             className="w-full sm:w-1/2 max-w-lg"
             style={{
-              clipPath: "polygon(100% 0%, 100% 30%, 100% 100%, 0% 80%, 0% 30%)",
+              clipPath: "polygon(0 15%, 100% 0%, 100% 85%, 0% 100%)",
             }}
           />
           <div className="flex flex-col items-center md:items-start mt-10 text-gray-600">

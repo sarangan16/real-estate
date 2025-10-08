@@ -36,12 +36,13 @@ const Projects = () => {
       className="containecontainer mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32 w-full overflow-hidden mb-15"
       id="Projects"
     >
-      <h1 className="text-3xl sm:text-5xl font-extrabold mb-6 text-center tracking-tight">
+      <h1 className="text-3xl sm:text-5xl text-gray-500 font-light mb-6 text-center tracking-tight">
         Abgeschlossene{" "}
-        <span className="text-gray-400 font-semibold decoration-2">
+        <span className="bg-blue-100 px-2 py-1 rounded-md text-gray-800">
           Projekte
         </span>
       </h1>
+
       <p className="text-gray-500 max-w-80 text-center mb-8 mx-auto">
         Räume gestalten, Werte schaffen – entdecken Sie unser Portfolio
       </p>

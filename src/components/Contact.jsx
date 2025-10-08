@@ -39,10 +39,13 @@ const Contact = () => {
       className="text-center p-6 py-20 lg:px-32 overflow-hidden"
       id="Contact"
     >
-      <h1 className="text-3xl sm:text-5xl font-extrabold mb-6 text-center tracking-tight">
+      <h1 className="text-3xl sm:text-5xl  text-gray-500 font-light mb-6 text-center tracking-tight">
         Kontaktieren Sie{" "}
-        <span className="text-gray-400 font-semibold decoration-2">uns</span>
+        <span className="bg-blue-100 px-2 py-1 rounded-md text-gray-800">
+          uns
+        </span>
       </h1>
+
       <p className="text-gray-500 max-w-80 text-center mb-8 mx-auto">
         Wir freuen uns darauf, von Ihnen zu hören! Ob Fragen, Beratung oder
         Projektanfragen – unser Team ist jederzeit für Sie da.
