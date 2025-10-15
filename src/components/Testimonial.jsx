@@ -8,9 +8,9 @@ const Testimonial = () => {
       className="container mx-auto py-16 px-6 lg:px-32 w-full"
       id="Testimonial"
     >
-      <h1 className="text-3xl sm:text-5xl text-gray-500 font-light mb-6 text-center tracking-tight">
-        Das sagen unsere{" "}
-        <span className="bg-blue-100 px-2 py-1 rounded-md text-gray-800">
+      <h1 className="text-3xl sm:text-5xl text-gray-500 font-light mb-6 text-center tracking-tight leading-snug">
+        Das sagen unsere
+        <span className="block sm:inline bg-blue-100 px-3 py-1 mt-2 sm:mt-0 sm:ml-2 rounded-md text-gray-800 w-fit mx-auto sm:mx-0">
           glücklichen Bauherren
         </span>
       </h1>
